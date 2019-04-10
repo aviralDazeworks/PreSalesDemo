@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>ActionPlanCreationController</members>
+		<members>ActionPlanDetailController</members>
+		<members>ActionPlanObjectTriggerTest</members>
+		<members>ActionPlansBatchBuilder</members>
+		<members>ActionPlansBatchBuilderTest</members>
+		<members>ActionPlansBatchBuilderUtilities</members>
+		<members>ActionPlansBatchDelete</members>
+		<members>ActionPlansBatchDeleteTest</members>
+		<members>ActionPlansBatchDeleteUtilities</members>
+		<members>ActionPlansBatchTaskBuilder</members>
+		<members>ActionPlansBatchTaskBuilderTest</members>
+		<members>ActionPlansConstants</members>
+		<members>ActionPlansDisplayController</members>
+		<members>ActionPlanSelectController</members>
+		<members>ActionPlansTaskTriggerUtilities</members>
+		<members>ActionPlansTaskTriggerUtilitiesTest</members>
+		<members>ActionPlansTestUtilities</members>
+		<members>ActionPlansUtilities</members>
+		<members>ActionPlansUtilitiesTest</members>
+		<members>ActionPlanTemplateCreationController</members>
+		<members>ActionPlanTemplateDetailController</members>
+		<members>ActionPlanTemplates</members>
+		<members>ExportActionPlanTemplate</members>
+		<members>FieldCustomValidationException</members>
+		<members>ImportActionPlanTemplate</members>
+		<members>ImportException</members>
+		<members>ImportTemplateController</members>
+		<members>ProcessorControl</members>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>ActionPlanAbout</members>
+		<members>ActionPlanCreation</members>
+		<members>ActionPlanDetail</members>
+		<members>ActionPlanList</members>
+		<members>ActionPlanPrint</members>
+		<members>ActionPlansDelete</members>
+		<members>ActionPlanSelect</members>
+		<members>ActionPlanTemplateCreation</members>
+		<members>ActionPlanTemplateDetail</members>
+		<members>ActionPlanTemplateExport</members>
+		<members>ActionPlanTemplateImport</members>
+		<members>ActionPlanTemplateList</members>
+		<members>*</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>AccountTrigger</members>
+		<members>ActionPlanTaskTemplateTrigger</members>
+		<members>ActionPlanTaskTrigger</members>
+		<members>ActionPlanTrigger</members>
+		<members>CampaignTrigger</members>
+		<members>CaseTrigger</members>
+		<members>ContactTrigger</members>
+		<members>ContractTrigger</members>
+		<members>LeadTrigger</members>
+		<members>OpportunityTrigger</members>
+		<members>*</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>ActionPlanLightningAssets</members>
+		<members>ActionPlans_cross</members>
+		<members>ActionPlans_General</members>
+		<members>ActionPlans_sortable</members>
+		<members>ActionPlan_ActionPlanCreationScripts</members>
+		<members>ActionPlan_ActionPlanCreationStyles</members>
+		<members>ActionPlan_ActionPlanDetailScripts</members>
+		<members>ActionPlan_ActionPlanDetailStyles</members>
+		<members>ActionPlan_ActionPlanPrintScripts</members>
+		<members>ActionPlan_ActionPlanSelectStyles</members>
+		<members>ActionPlan_ActionPlanSlds212</members>
+		<members>ActionPlan_ActionPlanTemplateCreationScripts</members>
+		<members>ActionPlan_ActionPlanTemplateCreationStyles</members>
+		<members>ActionPlan_ActionPlanTemplateDetailScripts</members>
+		<members>ActionPlan_ActionPlanTemplateDetailStyles</members>
+		<members>ActionPlan_Utilities</members>
+		<members>*</members>
+		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>ActionPlan__c</members>
+		<members>ActionPlanTemplate__c</members>
+		<members>Action_Plans_Settings__c</members>
+		<members>APTaskTemplate__c</members>
+		<members>APTTaskTemplate__c</members>
+		<members>Transaction__c</members>
+		<members>Account</members>
+		<members>AccountContactRole</members>
+		<members>Asset</members>
+		<members>Campaign</members>
+		<members>CampaignMember</members>
+		<members>Case</members>
+		<members>CaseComment</members>
+		<members>CaseContactRole</members>
+		<members>Contact</members>
+		<members>ContentVersion</members>
+		<members>Contract</members>
+		<members>ContractContactRole</members>
+		<members>Event</members>
+		<members>Idea</members>
+		<members>KnowledgeArticle</members>
+		<members>Lead</members>
+		<members>Opportunity</members>
+		<members>OpportunityContactRole</members>
+		<members>OpportunityLineItem</members>
+		<members>PartnerRole</members>
+		<members>Product2</members>
+		<members>Question</members>
+		<members>Quote</members>
+		<members>QuoteLineItem</members>
+		<members>Reply</members>
+		<members>Site</members>
+		<members>Solution</members>
+		<members>Task</members>
+		<members>Territory</members>
+		<members>User</members>
+		<members>UserLicense</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>WorkAccess-Access Layout</members>
+		<members>Account-Account (Marketing) Layout</members>
+		<members>Account-Account (Sales) Layout</members>
+		<members>Account-Account (Support) Layout</members>
+		<members>Account-Account Layout</members>
+		<members>ActionPlan__c-Action Plan Layout</members>
+		<members>ActionPlanTemplate__c-Action Plan Template Layout</members>
+		<members>APTaskTemplate__c-AP Task Layout</members>
+		<members>APTTaskTemplate__c-APT Task Layout</members>
+		<members>Asset-Asset Layout</members>
+		<members>AssetRelationship-Asset Relationship Layout</members>
+		<members>WorkBadgeDefinition-Badge Layout</members>
+		<members>WorkBadge-Badge Received Layout</members>
+		<members>Campaign-Campaign Layout</members>
+		<members>CampaignMember-Campaign Member Page Layout</members>
+		<members>Case-Case (Marketing) Layout</members>
+		<members>Case-Case (Sales) Layout</members>
+		<members>Case-Case (Support) Layout</members>
+		<members>Case-Case Layout</members>
+		<members>CaseClose-Close Case Layout</members>
+		<members>WorkCoaching-Coaching Layout</members>
+		<members>CommunityMemberLayout-Community Member Layout</members>
+		<members>Metric-Completion Metric Layout</members>
+		<members>ConsumptionRate-Consumption Rate Layout</members>
+		<members>ConsumptionSchedule-Consumption Schedule Layout</members>
+		<members>Contact-Contact (Marketing) Layout</members>
+		<members>Contact-Contact (Sales) Layout</members>
+		<members>Contact-Contact (Support) Layout</members>
+		<members>Contact-Contact Layout</members>
+		<members>ContentVersion-Content Version Layout</members>
+		<members>Contract-Contract Layout</members>
+		<members>DandBCompany-D&B Company Layout</members>
+		<members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+		<members>EmailMessage-Email Message Layout</members>
+		<members>ProfileSkillEndorsement-Endorsement Layout</members>
+		<members>Event-Event Layout</members>
+		<members>FeedItem-Feed Item Layout</members>
+		<members>WorkFeedback-Feedback Layout</members>
+		<members>WorkFeedback-Feedback Layout - Summer '15</members>
+		<members>WorkFeedback-Feedback Layout - Winter '16</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout - Summer '15</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout - Winter '16</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout - Summer '15</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout - Winter '16</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout - Summer '15</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout - Winter '16</members>
+		<members>WorkFeedbackTemplate-Feedback Template Layout</members>
+		<members>Global-Global Layout</members>
+		<members>WorkGoalCollaborator-Goal Collaborator Layout</members>
+		<members>Goal-Goal Layout</members>
+		<members>WorkGoal-Goal Layout</members>
+		<members>GoalLink-Goal Link Layout</members>
+		<members>WorkGoalLink-Goal Link Layout</members>
+		<members>Idea-Idea Layout</members>
+		<members>JobTracker-Job Tracker Layout</members>
+		<members>JobTracker-Job Tracker Layout - Summer '15</members>
+		<members>JobTracker-Job Tracker Layout - Winter '16</members>
+		<members>Lead-Lead (Marketing) Layout</members>
+		<members>Lead-Lead (Sales) Layout</members>
+		<members>Lead-Lead (Support) Layout</members>
+		<members>Lead-Lead Layout</members>
+		<members>CssEdit-Log a Case Layout</members>
+		<members>Macro-Macro Layout</members>
+		<members>MetricDataLink-Metric Data Link Layout</members>
+		<members>Metric-Metric Layout</members>
+		<members>Opportunity-Opportunity (Marketing) Layout</members>
+		<members>Opportunity-Opportunity (Sales) Layout</members>
+		<members>Opportunity-Opportunity (Support) Layout</members>
+		<members>Opportunity-Opportunity Layout</members>
+		<members>OpportunityLineItem-Opportunity Product Layout</members>
+		<members>Order-Order Layout</members>
+		<members>OrderItem-Order Product Layout</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout - Summer '15</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout - Winter '16</members>
+		<members>PricebookEntry-Price Book Entry Layout</members>
+		<members>Pricebook2-Price Book Layout</members>
+		<members>Lead-Product</members>
+		<members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+		<members>Product2-Product Layout</members>
+		<members>QuickText-Quick Text Layout</members>
+		<members>WorkRewardFund-Reward Fund Layout</members>
+		<members>WorkRewardFundType-Reward Fund Type Layout</members>
+		<members>WorkReward-Reward Layout</members>
+		<members>ScorecardAssociation-Scorecard Association Layout</members>
+		<members>Scorecard-Scorecard Layout</members>
+		<members>ScorecardMetric-Scorecard Metric Layout</members>
+		<members>ProfileSkill-Skill Layout</members>
+		<members>ProfileSkillUser-Skill User Layout</members>
+		<members>SocialPersona-Social Persona Layout</members>
+		<members>SocialPost-Social Post Layout</members>
+		<members>Solution-Solution Layout</members>
+		<members>Task-Task Layout</members>
+		<members>WorkThanks-Thanks Layout</members>
+		<members>Transaction__c-Transaction Layout</members>
+		<members>User-User Layout</members>
+		<members>UserAlt-User Profile Layout</members>
+		<members>UserProvAccount-User Provisioning Account Layout</members>
+		<members>UserProvisioningLog-User Provisioning Log Layout</members>
+		<members>UserProvisioningRequest-User Provisioning Request Layout</members>
+		<members>CssDetail-View Case Layout</members>
+		<members>*</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Workflow</name>
+	</types>
+	<types>
+		<members>Analytics Cloud Integration User</members>
+		<members>Analytics Cloud Security User</members>
+		<members>Authenticated Website</members>
+		<members>Chatter External User</members>
+		<members>Chatter Free User</members>
+		<members>Chatter Moderator User</members>
+		<members>clone</members>
+		<members>Contract Manager</members>
+		<members>Cross Org Data Proxy User</members>
+		<members>Custom: Marketing Profile</members>
+		<members>Custom: Sales Profile</members>
+		<members>Custom: Support Profile</members>
+		<members>Customer Community Login User</members>
+		<members>Customer Community Plus Login User</members>
+		<members>Customer Community Plus User</members>
+		<members>Customer Community User</members>
+		<members>Customer Portal Manager Custom</members>
+		<members>Customer Portal Manager Standard</members>
+		<members>External Identity User</members>
+		<members>Force.com - App Subscription User</members>
+		<members>Force.com - Free User</members>
+		<members>Gold Partner User</members>
+		<members>High Volume Customer Portal</members>
+		<members>High Volume Customer Portal User</members>
+		<members>Identity User</members>
+		<members>Marketing User</members>
+		<members>Partner App Subscription User</members>
+		<members>Partner Community Login User</members>
+		<members>Partner Community User</members>
+		<members>Read Only</members>
+		<members>Silver Partner User</members>
+		<members>Solution Manager</members>
+		<members>Standard Platform User</members>
+		<members>Standard User</members>
+		<members>System Administrator</members>
+		<members>Work.com Only User</members>
+		<members>work.com Onlyclone</members>
+		<members>*</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>X00e0o000001kmNKAAY</members>
+		<members>X00e0o000001kmNjAAI</members>
+		<members>X00ex00000018ozl_128_09_04_12_5</members>
+		<members>X00ex00000018ozm_128_09_04_12_6</members>
+		<members>X00ex00000018ozn_128_09_04_12_7</members>
+		<members>*</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ActionLinkGroupTemplate</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexComponent</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AppMenu</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApprovalProcess</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ArticleType</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AssignmentRules</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AuthProvider</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AutoResponseRules</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>BaseSharingRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>BrandingSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CallCenter</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Certificate</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CleanDataService</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Community (Zone)</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CommunityTemplateDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CommunityThemeDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CompactLayout</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ConnectedApp</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CorsWhitelistOrigin</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CriteriaBasedSharingRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomApplicationComponent</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomFeedFilter</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Custom Metadata Types (CustomObject)</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomMetadata</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomLabels</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomObjectTranslation</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomPageWebLink</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomPermission</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>DataCategoryGroup</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>DelegateGroup</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>DuplicateRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>EclairGeoData</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>EntitlementProcess</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>EntitlementTemplate</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>EventDelivery</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>EventSubscription</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ExternalServiceRegistration</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ExternalDataSource</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FieldSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FlowDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>GlobalValueSetTranslation</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Group</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>HomePageComponent</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>HomePageLayout</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>InstalledPackage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>KeywordList</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LiveChatAgentConfig</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LiveChatButton</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LiveChatDeployment</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LiveChatSensitiveDataRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ManagedTopics</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>MatchingRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>MilestoneType</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ModerationRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NamedCredential</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>OwnerSharingRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>PathAssistant</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>PlatformCachePartition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Portal</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>PostTemplate</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ProfilePasswordPolicy</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ProfileSessionSetting</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>QuickAction</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ReportType</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SamlSsoConfig</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Scontrol</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SharingRules</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SharingSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SiteDotCom</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Skill</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>StandardValueSetTranslation</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SynonymDictionary</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Territory</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Territory2</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Territory2Model</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Territory2Rule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Territory2Type</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>TransactionSecurityPolicy</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Translations</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveApplication</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveDashboard</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveDataflow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveDataset</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveLens</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>WaveTemplateBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Wavexmd</name>
+	</types>
+</Package>
