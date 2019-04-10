@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>AccesToken__c</members>
+		<members>ActionPlan__c</members>
+		<members>ActionPlanTemplate__c</members>
+		<members>Action_Plans_Settings__c</members>
+		<members>Adobe_Sign_API_Client__c</members>
+		<members>Agreement_Push_Mapping_Settings__c</members>
+		<members>Agreement_Template__c</members>
+		<members>Agreement_Type__c</members>
+		<members>APTaskTemplate__c</members>
+		<members>APTTaskTemplate__c</members>
+		<members>Attachment_Template__c</members>
+		<members>Chatter_Settings__c</members>
+		<members>CommentItem__c</members>
+		<members>DocumentKeyMutex__c</members>
+		<members>EchoSignGroupMapping__c</members>
+		<members>EchoSign_User_Sync_Result__c</members>
+		<members>Environment_Settings__c</members>
+		<members>Event__c</members>
+		<members>Event_Expense__c</members>
+		<members>Event_MDF__c</members>
+		<members>Event_Registration__c</members>
+		<members>Field_Template__c</members>
+		<members>Form_Field_Child_Mapping__c</members>
+		<members>Form_Field_Child_Mapping_Entry__c</members>
+		<members>Layer_Template__c</members>
+		<members>Lead_Conversion_Settings__c</members>
+		<members>Library_Template__c</members>
+		<members>Merge_Mapping_Settings__c</members>
+		<members>Payment__c</members>
+		<members>PostItem__c</members>
+		<members>Recipient_Template__c</members>
+		<members>Room__c</members>
+		<members>SDField__c</members>
+		<members>SDJob__c</members>
+		<members>SDoc__c</members>
+		<members>SDocsSettings__c</members>
+		<members>SDRelationship__c</members>
+		<members>SDTemplate__c</members>
+		<members>SD_Auth2__c</members>
+		<members>Session__c</members>
+		<members>SIGN_Agreement__c</members>
+		<members>SIGN_AgreementEvent__c</members>
+		<members>SIGN_Data_Mapping__c</members>
+		<members>SIGN_Field_Mapping__c</members>
+		<members>SIGN_File_Mapping__c</members>
+		<members>SIGN_Form_Field_Import__c</members>
+		<members>SIGN_Form_Field_Mapping__c</members>
+		<members>SIGN_Form_Field_Mapping_Entry__c</members>
+		<members>SIGN_Merge_Mapping__c</members>
+		<members>SIGN_Object_Mapping__c</members>
+		<members>SIGN_Recipients__c</members>
+		<members>SIGN_Settings__c</members>
+		<members>SIGN_Settings_Private__c</members>
+		<members>SIGN_SignedAgreement__c</members>
+		<members>SIGN_Toolbar_Settings__c</members>
+		<members>SIGN_Trigger__c</members>
+		<members>Speaker__c</members>
+		<members>Track__c</members>
+		<members>Venue__c</members>
+		<members>Account</members>
+		<members>AccountContactRole</members>
+		<members>Asset</members>
+		<members>Campaign</members>
+		<members>CampaignMember</members>
+		<members>Case</members>
+		<members>CaseComment</members>
+		<members>CaseContactRole</members>
+		<members>Contact</members>
+		<members>ContentVersion</members>
+		<members>Contract</members>
+		<members>ContractContactRole</members>
+		<members>Event</members>
+		<members>Idea</members>
+		<members>KnowledgeArticle</members>
+		<members>Lead</members>
+		<members>Opportunity</members>
+		<members>OpportunityContactRole</members>
+		<members>OpportunityLineItem</members>
+		<members>PartnerRole</members>
+		<members>Product2</members>
+		<members>Question</members>
+		<members>Quote</members>
+		<members>QuoteLineItem</members>
+		<members>Reply</members>
+		<members>Site</members>
+		<members>Solution</members>
+		<members>Task</members>
+		<members>Territory</members>
+		<members>User</members>
+		<members>UserLicense</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>WorkAccess-Access Layout</members>
+		<members>AccesToken__c-AccesToken Layout</members>
+		<members>Account-Account (Marketing) Layout</members>
+		<members>Account-Account (Sales) Layout</members>
+		<members>Account-Account (Support) Layout</members>
+		<members>Account-Account (Vendor) Layout</members>
+		<members>Account-Account Layout</members>
+		<members>Account-Account Layout SDoc</members>
+		<members>ActionPlan__c-Action Plan Layout</members>
+		<members>ActionPlanTemplate__c-Action Plan Template Layout</members>
+		<members>Attachment_Template__c-Add File Attachment Layout</members>
+		<members>Layer_Template__c-Add Form Field Template Layout</members>
+		<members>Recipient_Template__c-Add Recipient Layout</members>
+		<members>SIGN_AgreementEvent__c-Agreement Event Layout</members>
+		<members>SIGN_Agreement__c-Agreement Layout Enterprise / Unlimited</members>
+		<members>SIGN_Agreement__c-Agreement Layout Professional</members>
+		<members>SIGN_SignedAgreement__c-Agreement Page Layout</members>
+		<members>Agreement_Template__c-Agreement Template Layout</members>
+		<members>Agreement_Type__c-Agreement Type Layout</members>
+		<members>APTaskTemplate__c-AP Task Layout</members>
+		<members>APTTaskTemplate__c-APT Task Layout</members>
+		<members>Asset-Asset Layout</members>
+		<members>AssetRelationship-Asset Relationship Layout</members>
+		<members>Attachment_Template__c-Attachment Template Layout</members>
+		<members>WorkBadgeDefinition-Badge Layout</members>
+		<members>WorkBadge-Badge Received Layout</members>
+		<members>Campaign-Campaign Layout</members>
+		<members>CampaignMember-Campaign Member Page Layout</members>
+		<members>Case-Case (Marketing) Layout</members>
+		<members>Case-Case (Sales) Layout</members>
+		<members>Case-Case (Support) Layout</members>
+		<members>Case-Case Layout</members>
+		<members>CaseClose-Close Case Layout</members>
+		<members>WorkCoaching-Coaching Layout</members>
+		<members>CommentItem__c-CommentItem Layout</members>
+		<members>CommunityMemberLayout-Community Member Layout</members>
+		<members>Metric-Completion Metric Layout</members>
+		<members>ConsumptionRate-Consumption Rate Layout</members>
+		<members>ConsumptionSchedule-Consumption Schedule Layout</members>
+		<members>Contact-Contact (Marketing) Layout</members>
+		<members>Contact-Contact (Sales) Layout</members>
+		<members>Contact-Contact (Support) Layout</members>
+		<members>Contact-Contact Layout</members>
+		<members>Contact-Contact Layout SDoc</members>
+		<members>ContentVersion-Content Version Layout</members>
+		<members>Contract-Contract Layout</members>
+		<members>Contract-Contract Layout SDoc</members>
+		<members>DandBCompany-D&B Company Layout</members>
+		<members>Adobe_Sign_API_Client__c-Default Page Layout</members>
+		<members>DocumentKeyMutex__c-Document Key Mutex Layout</members>
+		<members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+		<members>SIGN_File_Mapping__c-EchoSign File Mapping Layout</members>
+		<members>SIGN_Form_Field_Import__c-EchoSign Form Field Import Layout</members>
+		<members>SIGN_Form_Field_Mapping_Entry__c-EchoSign Form Field Mapping Entry Layout</members>
+		<members>SIGN_Form_Field_Mapping__c-EchoSign Form Field Mapping Layout</members>
+		<members>EchoSignGroupMapping__c-EchoSign Group Mapping Layout</members>
+		<members>SIGN_Merge_Mapping__c-EchoSign Merge Mapping Layout</members>
+		<members>SIGN_Form_Field_Mapping_Entry__c-EchoSign Object Field Mapping Layout</members>
+		<members>SIGN_Recipients__c-Echosign Recipient Layout</members>
+		<members>SIGN_Trigger__c-EchoSign Trigger Layout</members>
+		<members>EchoSign_User_Sync_Result__c-EchoSign User Sync Result Layout</members>
+		<members>EmailMessage-Email Message Layout</members>
+		<members>ProfileSkillEndorsement-Endorsement Layout</members>
+		<members>Event_Expense__c-Event Expense Layout</members>
+		<members>Event-Event Layout</members>
+		<members>Event__c-Event Layout</members>
+		<members>Event_MDF__c-Event MDF Layout</members>
+		<members>FeedItem-Feed Item Layout</members>
+		<members>WorkFeedback-Feedback Layout</members>
+		<members>WorkFeedback-Feedback Layout - Summer '15</members>
+		<members>WorkFeedback-Feedback Layout - Winter '16</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout - Summer '15</members>
+		<members>WorkFeedbackQuestion-Feedback Question Layout - Winter '16</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout - Summer '15</members>
+		<members>WorkFeedbackQuestionSet-Feedback Question Set Layout - Winter '16</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout - Summer '15</members>
+		<members>WorkFeedbackRequest-Feedback Request Layout - Winter '16</members>
+		<members>WorkFeedbackTemplate-Feedback Template Layout</members>
+		<members>Field_Template__c-Field Template Layout</members>
+		<members>Form_Field_Child_Mapping_Entry__c-Form Field Child Mapping Entry Layout</members>
+		<members>Form_Field_Child_Mapping__c-Form Field Child Mapping Layout</members>
+		<members>Global-Global Layout</members>
+		<members>WorkGoalCollaborator-Goal Collaborator Layout</members>
+		<members>Goal-Goal Layout</members>
+		<members>WorkGoal-Goal Layout</members>
+		<members>GoalLink-Goal Link Layout</members>
+		<members>WorkGoalLink-Goal Link Layout</members>
+		<members>Idea-Idea Layout</members>
+		<members>JobTracker-Job Tracker Layout</members>
+		<members>JobTracker-Job Tracker Layout - Summer '15</members>
+		<members>JobTracker-Job Tracker Layout - Winter '16</members>
+		<members>Lead-Lead (Marketing) Layout</members>
+		<members>Lead-Lead (Sales) Layout</members>
+		<members>Lead-Lead (Support) Layout</members>
+		<members>Lead-Lead Layout</members>
+		<members>Lead-Lead Layout SDoc</members>
+		<members>Library_Template__c-Library Template Layout</members>
+		<members>CssEdit-Log a Case Layout</members>
+		<members>Macro-Macro Layout</members>
+		<members>Field_Template__c-Map Data into Agreement Field Layout</members>
+		<members>MetricDataLink-Metric Data Link Layout</members>
+		<members>Metric-Metric Layout</members>
+		<members>Opportunity-Opportunity (Marketing) Layout</members>
+		<members>Opportunity-Opportunity (Sales) Layout</members>
+		<members>Opportunity-Opportunity (Support) Layout</members>
+		<members>Opportunity-Opportunity Layout</members>
+		<members>Opportunity-Opportunity Layout SDoc</members>
+		<members>OpportunityLineItem-Opportunity Product Layout</members>
+		<members>Order-Order Layout</members>
+		<members>OrderItem-Order Product Layout</members>
+		<members>Payment__c-Payment Layout</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout - Summer '15</members>
+		<members>WorkPerformanceCycle-Performance Cycle Layout - Winter '16</members>
+		<members>PostItem__c-PostItem Layout</members>
+		<members>PricebookEntry-Price Book Entry Layout</members>
+		<members>Pricebook2-Price Book Layout</members>
+		<members>SIGN_Field_Mapping__c-Process Mapping Layout</members>
+		<members>SIGN_Object_Mapping__c-Process Operation Layout</members>
+		<members>SIGN_Data_Mapping__c-Process Template Layout</members>
+		<members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+		<members>Product2-Product Layout</members>
+		<members>QuickText-Quick Text Layout</members>
+		<members>Quote-Quote Layout</members>
+		<members>QuoteLineItem-Quote Line Item Layout</members>
+		<members>Recipient_Template__c-Recipient Template Layout</members>
+		<members>Event_Registration__c-Registration Layout</members>
+		<members>WorkRewardFund-Reward Fund Layout</members>
+		<members>WorkRewardFundType-Reward Fund Type Layout</members>
+		<members>WorkReward-Reward Layout</members>
+		<members>Room__c-Room Layout</members>
+		<members>ScorecardAssociation-Scorecard Association Layout</members>
+		<members>Scorecard-Scorecard Layout</members>
+		<members>ScorecardMetric-Scorecard Metric Layout</members>
+		<members>SDJob__c-SDJob Layout</members>
+		<members>SDField__c-SDoc Field Layout</members>
+		<members>SDoc__c-SDoc Layout</members>
+		<members>SDRelationship__c-SDoc Relationship Layout</members>
+		<members>SDTemplate__c-SDoc Template Layout</members>
+		<members>Session__c-Session Layout</members>
+		<members>ProfileSkill-Skill Layout</members>
+		<members>ProfileSkillUser-Skill User Layout</members>
+		<members>SocialPersona-Social Persona Layout</members>
+		<members>SocialPost-Social Post Layout</members>
+		<members>Solution-Solution Layout</members>
+		<members>Speaker__c-Speaker Layout</members>
+		<members>Task-Task Layout</members>
+		<members>WorkThanks-Thanks Layout</members>
+		<members>Track__c-Track Layout</members>
+		<members>User-User Layout</members>
+		<members>UserAlt-User Profile Layout</members>
+		<members>UserProvAccount-User Provisioning Account Layout</members>
+		<members>UserProvisioningLog-User Provisioning Log Layout</members>
+		<members>UserProvisioningRequest-User Provisioning Request Layout</members>
+		<members>Lead-Vendor layout</members>
+		<members>Venue__c-Venue Layout</members>
+		<members>CssDetail-View Case Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>AccountAgreementActionController</members>
+		<members>ActionPlanCreationController</members>
+		<members>ActionPlanDetailController</members>
+		<members>ActionPlanObjectTriggerTest</members>
+		<members>ActionPlansBatchBuilder</members>
+		<members>ActionPlansBatchBuilderTest</members>
+		<members>ActionPlansBatchBuilderUtilities</members>
+		<members>ActionPlansBatchDelete</members>
+		<members>ActionPlansBatchDeleteTest</members>
+		<members>ActionPlansBatchDeleteUtilities</members>
+		<members>ActionPlansBatchTaskBuilder</members>
+		<members>ActionPlansBatchTaskBuilderTest</members>
+		<members>ActionPlansConstants</members>
+		<members>ActionPlansDisplayController</members>
+		<members>ActionPlanSelectController</members>
+		<members>ActionPlansTaskTriggerUtilities</members>
+		<members>ActionPlansTaskTriggerUtilitiesTest</members>
+		<members>ActionPlansTestUtilities</members>
+		<members>ActionPlansUtilities</members>
+		<members>ActionPlansUtilitiesTest</members>
+		<members>ActionPlanTemplateCreationController</members>
+		<members>ActionPlanTemplateDetailController</members>
+		<members>ActionPlanTemplates</members>
+		<members>AdobeSignApiQueueableService</members>
+		<members>AdobeSignCustomMetadataUtilities</members>
+		<members>AgreementAdminComponentController</members>
+		<members>AgreementAdminComponentControllerTests</members>
+		<members>AgreementAttachmentDownloadService</members>
+		<members>AgreementAttachmentDownloadServiceTest</members>
+		<members>AgreementAttachmentService</members>
+		<members>AgreementCancelInvocableAction</members>
+		<members>AgreementComponentController</members>
+		<members>AgreementComponentControllerTests</members>
+		<members>AgreementDeleteInvocableAction</members>
+		<members>AgreementEventWrapper</members>
+		<members>AgreementInvocableAction</members>
+		<members>AgreementInvocableActionTests</members>
+		<members>AgreementMobileController</members>
+		<members>AgreementMobileControllerTests</members>
+		<members>AgreementNotificationQueue</members>
+		<members>AgreementNotificationRestResource</members>
+		<members>AgreementPublisherActionController</members>
+		<members>AgreementPublisherActionControllerTests</members>
+		<members>AgreementPushMappingExecutor</members>
+		<members>AgreementPushMappingProcessingController</members>
+		<members>AgreementPushMappingTest</members>
+		<members>AgreementPushTests</members>
+		<members>AgreementRemindInvocableAction</members>
+		<members>AgreementSendInvocableAction</members>
+		<members>AgreementSetupWizardComponentController</members>
+		<members>AgreementSetupWizardComponentCrlTests</members>
+		<members>AgreementTemplateBatch</members>
+		<members>AgreementTemplateBatchController</members>
+		<members>AgreementTemplateBatchTests</members>
+		<members>AgreementTemplateGenerator</members>
+		<members>AgreementTemplateGeneratorService</members>
+		<members>AgreementTemplateGeneratorTests</members>
+		<members>AgreementTemplateLoadInvocableAction</members>
+		<members>AgreementTemplateModel</members>
+		<members>AgreementTemplatePicklist</members>
+		<members>AgreementTemplateProcessor</members>
+		<members>AgreementTemplateProcessorController</members>
+		<members>AgreementTemplateService</members>
+		<members>AgreementTemplateServiceBatch</members>
+		<members>AgreementTemplateVariable</members>
+		<members>AgreementTemplateWebService</members>
+		<members>AgreementUpdateInvocableAction</members>
+		<members>AgreementWrapper</members>
+		<members>apiEchosign</members>
+		<members>AttachContentController</members>
+		<members>attachDocument_Controller</members>
+		<members>AttachmentTemplateController</members>
+		<members>AttachmentWrapper</members>
+		<members>authApiEchosign</members>
+		<members>AuthorizeController</members>
+		<members>BatchDocumentKeyFetcher</members>
+		<members>CalendarDay</members>
+		<members>CalendarWeek</members>
+		<members>CcWrapper</members>
+		<members>ChangePasswordController</members>
+		<members>ChangePasswordControllerTest</members>
+		<members>CommunitiesLandingController</members>
+		<members>CommunitiesLandingControllerTest</members>
+		<members>CommunitiesLoginController</members>
+		<members>CommunitiesLoginControllerTest</members>
+		<members>CommunitiesSelfRegConfirmController</members>
+		<members>CommunitiesSelfRegConfirmControllerTest</members>
+		<members>CommunitiesSelfRegController</members>
+		<members>CommunitiesSelfRegControllerTest</members>
+		<members>ContactAgreementActionController</members>
+		<members>ContentFileWrapper</members>
+		<members>ContentWrapper</members>
+		<members>CRUD</members>
+		<members>CsvReader</members>
+		<members>DataMappingController</members>
+		<members>DcRestApiModel</members>
+		<members>DeleteAttachmentTemplateController</members>
+		<members>DeleteLayerTemplateController</members>
+		<members>DeleteRecipientTemplateController</members>
+		<members>DocumentContent</members>
+		<members>DocumentFileWrapper</members>
+		<members>DocumentWrapper</members>
+		<members>dto10ApiEchosign</members>
+		<members>dto11ApiEchosign</members>
+		<members>dto12ApiEchosign</members>
+		<members>dto13ApiEchosign</members>
+		<members>dto14ApiEchosign</members>
+		<members>dto15ApiEchosign</members>
+		<members>dto16ApiEchosign</members>
+		<members>dto17ApiEchosign</members>
+		<members>dto18ApiEchosign</members>
+		<members>dto19ApiEchosign</members>
+		<members>dto20ApiEchosign</members>
+		<members>dto2AuthApiEchosign</members>
+		<members>dto3AuthApiEchosign</members>
+		<members>dto4AuthApiEchosign</members>
+		<members>dto7ApiEchosign</members>
+		<members>dto8ApiEchosign</members>
+		<members>dto9ApiEchosign</members>
+		<members>dtoApiEchosign</members>
+		<members>EchoSignActionBatch</members>
+		<members>EchoSignActionListController</members>
+		<members>EchoSignActionListTests</members>
+		<members>EchoSignAdminController</members>
+		<members>EchoSignAgreementAdvanced</members>
+		<members>EchoSignAgreementAdvancedTests</members>
+		<members>EchoSignAgreementPushCallbackController</members>
+		<members>EchoSignApiService</members>
+		<members>EchoSignApiUtilities</members>
+		<members>EchoSignCallback</members>
+		<members>EchoSignChatterUtilities</members>
+		<members>EchoSignDataMapping</members>
+		<members>EchoSignDataMapping_Controller</members>
+		<members>EchoSignDocumentLibrary</members>
+		<members>EchoSignGroup</members>
+		<members>EchoSignGroupUtilities</members>
+		<members>EchoSignHttpUtilities</members>
+		<members>EchoSignInstallHandler</members>
+		<members>EchoSignMappingController</members>
+		<members>EchoSignMetadataUtilities</members>
+		<members>EchoSignParserUtilities</members>
+		<members>EchoSignProcessTrigger</members>
+		<members>EchoSignProcessTriggerTests</members>
+		<members>EchoSignScheduleCallback</members>
+		<members>EchoSignSettingsUtilities</members>
+		<members>EchoSignSetupWizardController</members>
+		<members>EchoSignTestService</members>
+		<members>EchoSignUninstallHandler</members>
+		<members>EchoSignUser</members>
+		<members>EchoSignValidation</members>
+		<members>EmailScheduler</members>
+		<members>ExportActionPlanTemplate</members>
+		<members>FieldCustomValidationException</members>
+		<members>FieldMappingConversion</members>
+		<members>FieldTemplateController</members>
+		<members>ForgotPasswordController</members>
+		<members>ForgotPasswordControllerTest</members>
+		<members>FormFieldTemplateWrapper</members>
+		<members>GlobalAgreementActionController</members>
+		<members>GroupMappingController</members>
+		<members>GroupMappingWrapper</members>
+		<members>ImportActionPlanTemplate</members>
+		<members>ImportException</members>
+		<members>ImportTemplateController</members>
+		<members>LargeFileDownloadService</members>
+		<members>LargeFileDownloadServiceTest</members>
+		<members>LayerTemplateController</members>
+		<members>LeadAgreementActionController</members>
+		<members>LeadCapturePostInstallClass</members>
+		<members>LeadCapturePostInstallClassTest</members>
+		<members>LibraryDocumentFileWrapper</members>
+		<members>LibraryDocumentSelectorController</members>
+		<members>LibraryTemplateWrapper</members>
+		<members>LightningForgotPasswordController</members>
+		<members>LightningForgotPasswordControllerTest</members>
+		<members>LightningLoginFormController</members>
+		<members>LightningLoginFormControllerTest</members>
+		<members>LightningSelfRegisterController</members>
+		<members>LightningSelfRegisterControllerTest</members>
+		<members>LinkedIn</members>
+		<members>LoadAdminResult</members>
+		<members>LoadSetupWizardResult</members>
+		<members>LocalizationUtilities</members>
+		<members>ManageAgreementsController</members>
+		<members>MergeMappingController</members>
+		<members>MergeMappingObjectSelectorController</members>
+		<members>MergeMappingProcessor</members>
+		<members>MetadataService</members>
+		<members>MetadataServiceTest</members>
+		<members>MockDcRestResponseGenerator</members>
+		<members>MoveGroupUsersBatch</members>
+		<members>MyProfilePageController</members>
+		<members>MyProfilePageControllerTest</members>
+		<members>OAuth</members>
+		<members>OpportunityAgreementActionController</members>
+		<members>PostInstallClass</members>
+		<members>postsListController</members>
+		<members>PostUninstallClass</members>
+		<members>ProcessorControl</members>
+		<members>PublisherActionAttachmentController</members>
+		<members>QuoteLineItemsExtension</members>
+		<members>QuoteLineItemsExtensionTest</members>
+		<members>RecipientTemplateController</members>
+		<members>RecipientWrapper</members>
+		<members>RecordAgreementDataResult</members>
+		<members>RemoteResult</members>
+		<members>SalesforceLeadCaptureController</members>
+		<members>SalesforceLeadCaptureControllerTest</members>
+		<members>SalesforceOAuthService</members>
+		<members>SalesforceOAuthServiceTest</members>
+		<members>SchemaWrapper</members>
+		<members>SCTestController</members>
+		<members>SDAuth</members>
+		<members>SDBatch</members>
+		<members>SDConfig</members>
+		<members>SDCreateController</members>
+		<members>SDEmailController</members>
+		<members>SDFileList</members>
+		<members>SDFileUpload</members>
+		<members>SDImage</members>
+		<members>SDJobTemplateController</members>
+		<members>SDListCreateController</members>
+		<members>SDQueue</members>
+		<members>SDQueue2</members>
+		<members>SDQueueRetry</members>
+		<members>SDRest</members>
+		<members>SDSG</members>
+		<members>SDTemplateController</members>
+		<members>SDTemplateEditor</members>
+		<members>SDTemplateWrapper</members>
+		<members>SDTestSuite</members>
+		<members>SDTranslate</members>
+		<members>SDUtil</members>
+		<members>SDXMLDom</members>
+		<members>SDXMLDomTest</members>
+		<members>SD_XMLDom</members>
+		<members>SD_XMLDomTest</members>
+		<members>SD_XMLNode</members>
+		<members>SD_XMLNodeTest</members>
+		<members>SD_XMLUtils</members>
+		<members>SelectOptionWrapper</members>
+		<members>SelfServiceAgreementScopePicklist</members>
+		<members>SelfServiceSignResult</members>
+		<members>SelfSignAgreementTemplatePicklist</members>
+		<members>SendClass</members>
+		<members>SettingsWrapper</members>
+		<members>SignedAgreementDocLinkController</members>
+		<members>SignedAgreementImagesController</members>
+		<members>SiteLoginController</members>
+		<members>SiteLoginControllerTest</members>
+		<members>SiteRegisterController</members>
+		<members>SiteRegisterControllerTest</members>
+		<members>SObjectItemWrapper</members>
+		<members>SupportingDocument</members>
+		<members>TestAgreementTemplates</members>
+		<members>TestAttachContentController</members>
+		<members>TestAttachDocumentController</members>
+		<members>TestBackgroundActions</members>
+		<members>TestEchoSignAdminController</members>
+		<members>TestEchoSignApi</members>
+		<members>TestEchoSignChatterUtilities</members>
+		<members>TestEchoSignDataMapping</members>
+		<members>TestEchoSignScheduleCallback</members>
+		<members>TestEchoSignUninstallHandler</members>
+		<members>TestEchoSignUtilities</members>
+		<members>TestEnforceSingleDefaultMapping</members>
+		<members>TestFieldMappingConversion</members>
+		<members>TestGroupMapping</members>
+		<members>TestMergeMapping</members>
+		<members>TestProcessAgreementMapping</members>
+		<members>TestProcessSignedAgreementMapping</members>
+		<members>UploadedFileWrapper</members>
+		<members>UserSyncResult</members>
+		<members>UserSyncStatus</members>
+		<members>WebServiceMockImpl</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>AboutEchoSign</members>
+		<members>AccountAgreementAction</members>
+		<members>ActionPlanAbout</members>
+		<members>ActionPlanCreation</members>
+		<members>ActionPlanDetail</members>
+		<members>ActionPlanList</members>
+		<members>ActionPlanPrint</members>
+		<members>ActionPlansDelete</members>
+		<members>ActionPlanSelect</members>
+		<members>ActionPlanTemplateCreation</members>
+		<members>ActionPlanTemplateDetail</members>
+		<members>ActionPlanTemplateExport</members>
+		<members>ActionPlanTemplateImport</members>
+		<members>ActionPlanTemplateList</members>
+		<members>AgreementEditor</members>
+		<members>AgreementEvents</members>
+		<members>AgreementMobile</members>
+		<members>AgreementMobileTab</members>
+		<members>AgreementRelatedList</members>
+		<members>AgreementTemplateBatch</members>
+		<members>AgreementTemplateProcess</members>
+		<members>AnswersHome</members>
+		<members>ApiKeyInput</members>
+		<members>AttachContent</members>
+		<members>AttachDocument</members>
+		<members>AttachmentTemplate</members>
+		<members>authorize</members>
+		<members>BandwidthExceeded</members>
+		<members>CancelAgreement</members>
+		<members>Cancel_Agreement</members>
+		<members>ChangePassword</members>
+		<members>CommunitiesLanding</members>
+		<members>CommunitiesLogin</members>
+		<members>CommunitiesSelfReg</members>
+		<members>CommunitiesSelfRegConfirm</members>
+		<members>CommunitiesTemplate</members>
+		<members>completeAuth</members>
+		<members>completeFBAuth</members>
+		<members>completeLIAuth</members>
+		<members>ContactAgreementAction</members>
+		<members>DataMapping</members>
+		<members>DeleteAgreement</members>
+		<members>DeleteAttachmentTemplate</members>
+		<members>DeleteLayerTemplate</members>
+		<members>DeleteRecipientTemplate</members>
+		<members>EchoSignActionList</members>
+		<members>EchosignAdmin</members>
+		<members>EchoSignAdminSettings</members>
+		<members>EchosignAgreement</members>
+		<members>EchoSignAgreementAdvanced</members>
+		<members>EchoSignAgreementPushCallback</members>
+		<members>EchoSignCallback</members>
+		<members>EchoSignCancelBatchAction</members>
+		<members>EchoSignDataMapping</members>
+		<members>EchoSignDeleteAgreementBatchAction</members>
+		<members>EchosignHelp</members>
+		<members>EchoSignRemindBatchAction</members>
+		<members>EchoSignSendAgreementBatchAction</members>
+		<members>EchoSignSetupWizard</members>
+		<members>EchoSignUpdateAgreementBatchAction</members>
+		<members>EchoSignUserGuide</members>
+		<members>Exception</members>
+		<members>FieldTemplate</members>
+		<members>FileNotFound</members>
+		<members>ForgotPassword</members>
+		<members>ForgotPasswordConfirm</members>
+		<members>GlobalAgreementAction</members>
+		<members>GroupMapping</members>
+		<members>GroupMappingIe</members>
+		<members>IdeasHome</members>
+		<members>InMaintenance</members>
+		<members>Invoice</members>
+		<members>LayerTemplate</members>
+		<members>LeadAgreementAction</members>
+		<members>Lead_Capture</members>
+		<members>ManageAgreements</members>
+		<members>MergeMapping</members>
+		<members>MergeMappingObjectSelector</members>
+		<members>MyEchoSign</members>
+		<members>MyProfilePage</members>
+		<members>OpportunityAgreementAction</members>
+		<members>Opportunity_PDF</members>
+		<members>Package</members>
+		<members>postsList</members>
+		<members>Quote</members>
+		<members>RecipientTemplate</members>
+		<members>RefreshStatus</members>
+		<members>SalesforceOAuthPage</members>
+		<members>SDAudit</members>
+		<members>SDAuth</members>
+		<members>SDConfig</members>
+		<members>SDCreate1</members>
+		<members>SDCreate2</members>
+		<members>SDCreate3</members>
+		<members>SDEdit</members>
+		<members>SDEmail</members>
+		<members>SDFileList</members>
+		<members>SDFileReplace</members>
+		<members>SDFileUpload</members>
+		<members>SDJobContact</members>
+		<members>SDJobDOC</members>
+		<members>SDJobDOCX</members>
+		<members>SDJobPDF</members>
+		<members>SDLicenses</members>
+		<members>SDRelationshipDelete</members>
+		<members>SDRestoreTemplate</members>
+		<members>SDTemplateCSV</members>
+		<members>SDTemplateDOC</members>
+		<members>SDTemplateDOCX</members>
+		<members>SDTemplateEditor</members>
+		<members>SDTemplateEditorProperties</members>
+		<members>SDTemplateHTML</members>
+		<members>SDTemplatePDF</members>
+		<members>SDTemplatePPT</members>
+		<members>SDTemplateXLS</members>
+		<members>SDTemplateXML</members>
+		<members>SDTranslate</members>
+		<members>SendForSignature</members>
+		<members>SendForSignatureMobile</members>
+		<members>SendReminder</members>
+		<members>SignedAgreementDocLink</members>
+		<members>SignedAgreementImages</members>
+		<members>SiteLogin</members>
+		<members>SiteRegister</members>
+		<members>SiteRegisterConfirm</members>
+		<members>SiteTemplate</members>
+		<members>StdExceptionTemplate</members>
+		<members>Unauthorized</members>
+		<members>UnderConstruction</members>
+		<members>UserGroupMapping</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>AgreementPublisherAction</members>
+		<members>ContentSelector</members>
+		<members>PublisherActionAttachment</members>
+		<members>SDTemplateCSSComponent</members>
+		<members>SDXMLComponent</members>
+		<members>SiteFooter</members>
+		<members>SiteHeader</members>
+		<members>SiteLogin</members>
+		<members>SitePoweredBy</members>
+		<name>ApexComponent</name>
+	</types>
+	<types>
+		<members>AccountTrigger</members>
+		<members>ActionPlanTaskTemplateTrigger</members>
+		<members>ActionPlanTaskTrigger</members>
+		<members>ActionPlanTrigger</members>
+		<members>afterInsertUpdateSIGN_Trigger</members>
+		<members>AgreementSentListener</members>
+		<members>AttachmentListener</members>
+		<members>AttachmentTemplateListener</members>
+		<members>BackgroundAgreementActions</members>
+		<members>BeforePostsTrigger</members>
+		<members>CampaignTrigger</members>
+		<members>CaseTrigger</members>
+		<members>CommentsTrigger</members>
+		<members>ContactTrigger</members>
+		<members>ContractTrigger</members>
+		<members>EnforceSingleDefaultAgreementTemplate</members>
+		<members>EnforceSingleDefaultMapping</members>
+		<members>EnforceSingleDefaultMergeMapping</members>
+		<members>LayerTemplateListener</members>
+		<members>LeadListener</members>
+		<members>LeadTrigger</members>
+		<members>OpportunityTrigger</members>
+		<members>PostsTrigger</members>
+		<members>ProcessAgreementMapping</members>
+		<members>ProcessSignedAgreementMapping</members>
+		<members>RecipientTemplateListener</members>
+		<members>SDJobs</members>
+		<members>SDocTrigger</members>
+		<members>SDRelationship</members>
+		<members>SDRelationshipDelete</members>
+		<members>SDTemplate</members>
+		<members>SyncEchoSignUser</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>A12_Alert</members>
+		<members>A12_FullCheck</members>
+		<members>ActionAdd</members>
+		<members>ActionAttachmentEdit</members>
+		<members>ActionAttachmentView</members>
+		<members>ActionDelete</members>
+		<members>ActionPlanLightningAssets</members>
+		<members>ActionPlans_cross</members>
+		<members>ActionPlans_General</members>
+		<members>ActionPlans_sortable</members>
+		<members>ActionPlan_ActionPlanCreationScripts</members>
+		<members>ActionPlan_ActionPlanCreationStyles</members>
+		<members>ActionPlan_ActionPlanDetailScripts</members>
+		<members>ActionPlan_ActionPlanDetailStyles</members>
+		<members>ActionPlan_ActionPlanPrintScripts</members>
+		<members>ActionPlan_ActionPlanSelectStyles</members>
+		<members>ActionPlan_ActionPlanSlds212</members>
+		<members>ActionPlan_ActionPlanTemplateCreationScripts</members>
+		<members>ActionPlan_ActionPlanTemplateCreationStyles</members>
+		<members>ActionPlan_ActionPlanTemplateDetailScripts</members>
+		<members>ActionPlan_ActionPlanTemplateDetailStyles</members>
+		<members>ActionPlan_Utilities</members>
+		<members>ActionReplace</members>
+		<members>ActionReplaceCancel</members>
+		<members>ActionReplaceSubmit</members>
+		<members>AddEntry</members>
+		<members>AddRecipientIcon</members>
+		<members>AdobeBlueArrow</members>
+		<members>AdobeBlueReverseArrow</members>
+		<members>AdobeBullet</members>
+		<members>AdobeCheckbox</members>
+		<members>AdobeEchoSignLogo</members>
+		<members>AdobeFonts</members>
+		<members>AdobeNextArrow</members>
+		<members>AdobeSubBullet</members>
+		<members>AdobeTrashIcon</members>
+		<members>AgreementLogo</members>
+		<members>AgreementPublisherActionLogo</members>
+		<members>AppReviewIcon</members>
+		<members>ApproverIcon</members>
+		<members>BackButton</members>
+		<members>BackButtonDisabled</members>
+		<members>BackButtonPressed</members>
+		<members>BlackBulletPoint</members>
+		<members>BlueArrow</members>
+		<members>businesslogo</members>
+		<members>CancelAgreementButton</members>
+		<members>CancelDraftButton</members>
+		<members>CheckboxActiveIcon</members>
+		<members>CheckboxChecked</members>
+		<members>CheckboxEmptyIcon</members>
+		<members>CheckboxFullIcon</members>
+		<members>CheckboxUnchecked</members>
+		<members>ckEditor</members>
+		<members>classcreate</members>
+		<members>DeleteAgreementButton</members>
+		<members>DocumentLargeIcon</members>
+		<members>DownGreenArrow</members>
+		<members>DropDownArrowIcon</members>
+		<members>EchoSignAdminTabIcon</members>
+		<members>EchoSignTabLogo</members>
+		<members>ErrorIcon</members>
+		<members>ExcelIcon</members>
+		<members>FadeDownGreenArrow</members>
+		<members>FadeUpGreenArrow</members>
+		<members>FailureIcon</members>
+		<members>GearSettings</members>
+		<members>GrabberIcon</members>
+		<members>GreenArrow</members>
+		<members>GreyBulletPoint</members>
+		<members>GreyGradientBottom</members>
+		<members>GreyGradientTop</members>
+		<members>JpegIcon</members>
+		<members>jquery</members>
+		<members>jquery1103</members>
+		<members>jquery211</members>
+		<members>jquery224</members>
+		<members>jquery321</members>
+		<members>jqueryui1111</members>
+		<members>jqueryui1120</members>
+		<members>jqueryui1121</members>
+		<members>jszip</members>
+		<members>jszip300</members>
+		<members>LeftGreenArrow</members>
+		<members>LibraryDocumentTemplate</members>
+		<members>LibraryFieldsTemplate</members>
+		<members>ListFormFieldName</members>
+		<members>Loading</members>
+		<members>LoadingSpinner</members>
+		<members>MappingBackButton</members>
+		<members>Mobile_Design_Templates</members>
+		<members>NextButton</members>
+		<members>NextButtonDisabled</members>
+		<members>NextButtonPressed</members>
+		<members>OneStarter</members>
+		<members>path_js</members>
+		<members>PdfIcon</members>
+		<members>PlusGreenCircle</members>
+		<members>PowerPointIcon</members>
+		<members>queryencoder010</members>
+		<members>RecipientStatusCompleted</members>
+		<members>RecipientStatusDeclined</members>
+		<members>RecipientStatusWaiting</members>
+		<members>RightBlueArrow</members>
+		<members>s1custom</members>
+		<members>s1doctype</members>
+		<members>s1fonts</members>
+		<members>s1standard</members>
+		<members>SalesforceFonts</members>
+		<members>SaveAgreementButton</members>
+		<members>scResources</members>
+		<members>SDoc</members>
+		<members>SendAgreementButton</members>
+		<members>SendAgreementButtonDisabled</members>
+		<members>SendReminderButton</members>
+		<members>SignerIcon</members>
+		<members>SiteSamples</members>
+		<members>SLDS</members>
+		<members>SortAscArrow</members>
+		<members>SortDescArrow</members>
+		<members>SuccessIcon</members>
+		<members>svg4everybody</members>
+		<members>TextFormFieldName</members>
+		<members>TrashDelete</members>
+		<members>underscore_1_5_1</members>
+		<members>UpdateButton</members>
+		<members>UpGreenArrow</members>
+		<members>UploadFileButton</members>
+		<members>ViewAgreementButton</members>
+		<members>WaitingDots</members>
+		<members>walkmeimpt</members>
+		<members>WordIcon</members>
+		<members>yui290</members>
+		<members>yuiskin</members>
+		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>AgreementEditor</members>
+		<members>AgreementEditorBridge</members>
+		<members>AgreementEvents</members>
+		<members>AgreementEventsBridge</members>
+		<members>AgreementList</members>
+		<members>AgreementPanel</members>
+		<members>AgreementPanelWide</members>
+		<members>AgreementRelatedListBridge</members>
+		<members>DocumentCloudAdmin</members>
+		<members>DocumentCloudAdminBridge</members>
+		<members>DocumentCloudSetupWizard</members>
+		<members>DocumentCloudSetupWizardBridge</members>
+		<members>DocumentSelectedEvent</members>
+		<members>DocumentSelector</members>
+		<members>FormFieldTemplateSelectedEvent</members>
+		<members>FormFieldTemplateSelector</members>
+		<members>SelfServiceSign</members>
+		<members>SignedAgreementDocLink</members>
+		<members>svgIcon</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>Analytics Cloud Integration User</members>
+		<members>Analytics Cloud Security User</members>
+		<members>Authenticated Website</members>
+		<members>Chatter External User</members>
+		<members>Chatter Free User</members>
+		<members>Chatter Moderator User</members>
+		<members>Contract Manager</members>
+		<members>Cross Org Data Proxy User</members>
+		<members>Custom: Marketing Profile</members>
+		<members>Custom: Sales Profile</members>
+		<members>Custom: Support Profile</members>
+		<members>Customer Community Login User</members>
+		<members>Customer Community Plus Login User</members>
+		<members>Customer Community Plus User</members>
+		<members>Customer Community User</members>
+		<members>Customer Portal Manager Custom</members>
+		<members>Customer Portal Manager Standard</members>
+		<members>External Identity User</members>
+		<members>Force.com - App Subscription User</members>
+		<members>Force.com - Free User</members>
+		<members>Gold Partner User</members>
+		<members>High Volume Customer Portal</members>
+		<members>High Volume Customer Portal User</members>
+		<members>Identity User</members>
+		<members>Marketing User</members>
+		<members>Partner App Subscription User</members>
+		<members>Partner Community Login User</members>
+		<members>Partner Community User</members>
+		<members>Read Only</members>
+		<members>Silver Partner User</members>
+		<members>Solution Manager</members>
+		<members>Standard Platform User</members>
+		<members>Standard User</members>
+		<members>System Administrator</members>
+		<members>Work.com Only User</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Adobe_Sign_Admin</members>
+		<members>Adobe_Sign_Integration_User</members>
+		<members>Adobe_Sign_User</members>
+		<members>SDocs_Administrator</members>
+		<members>SDocs_User</members>
+		<members>Salesforce_Lead_Capture</members>
+		<members>X00ex00000018ozl_128_09_04_12_5</members>
+		<members>X00ex00000018ozm_128_09_04_12_6</members>
+		<members>X00ex00000018ozn_128_09_04_12_7</members>
+		<name>PermissionSet</name>
+	</types>
+</Package>
